@@ -26,7 +26,7 @@ Or install it yourself as:
 ## Usage
 
 Just include Welo::Xml::Resource in your class.  Then you can use
-#build_xml(builder) where builder is a Nokogiri::XML::Builder.
+resource.build_xml(builder) where builder is a Nokogiri::XML::Builder.
 
 see ./samples/foo.rb for an usage example
 
