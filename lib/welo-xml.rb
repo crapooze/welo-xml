@@ -1,7 +1,9 @@
+require 'nokogiri'
 require "welo-xml/version"
+require "welo-xml/resource"
 
 module Welo
   module Xml
-    # Your code goes here...
+    NS = 'welo'.freeze
   end
 end
