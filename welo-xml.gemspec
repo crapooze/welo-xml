@@ -4,8 +4,8 @@ require File.expand_path('../lib/welo-xml/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["crapooze"]
   gem.email         = ["crapooze@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{An XML exporter for Welo::Resources}
+  gem.summary       = %q{Painless XML writing for you Welo::Resources}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "welo-xml"
   gem.require_paths = ["lib"]
   gem.version       = Welo::Xml::VERSION
+  gem.add_dependency "nokogiri"
+  gem.add_dependency "welo"
 end

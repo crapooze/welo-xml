@@ -6,6 +6,9 @@ require 'json'
 
 class Foo
   include Welo::Xml::Resource
+  xml_element "my_foo" #optional and defaults to "foo"
+  proprietary_ns "my-application" #optional and defaults to nil
+
   identify :default, [:name]
   perspective :default, [:name, :bars, :bar, :baz, :bazs]
   relationship :bar, :Bar, [:one]
